@@ -1,0 +1,58 @@
+@model asp.net_mysql_crud.Models.Product
+
+@{
+  Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add producrt</title>
+</head>
+<body>
+  <h1>Add product</h1>
+
+  <form method="post" asp-controller="product" asp-action="add">
+    <table>
+      <tr>
+        <td>Id</td>
+        <td>
+          <input type="text" asp-for="Id" required="require" />
+        </td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td>
+          <input type="text" asp-for="Name" required="require" />
+        </td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td>
+          <input type="number" asp-for="Price" required="require" min="0"/>
+        </td>
+      </tr>
+      <tr>
+        <td>Quantity</td>
+        <td>
+          <input type="number" asp-for="Quantity" required="require" min=0/>
+        </td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td>
+          <input type="checkbox" asp-for="Status" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" value="Save">
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>

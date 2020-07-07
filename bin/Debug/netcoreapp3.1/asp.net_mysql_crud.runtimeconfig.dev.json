@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/crystark/.dotnet/store/|arch|/|tfm|",
+      "/Users/crystark/.nuget/packages"
+    ]
+  }
+}
